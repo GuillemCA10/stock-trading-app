@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    {% if stocks %}
+        <form action="/sell" method="post">
+            <select name="symbol">
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.symbol }}</option>
+                {% endfor %}
+            </select>
+
+            <input name="shares" type="number" min="1" placeholder="Number of shares">
+            <button type="submit">Sell shares</button>
+        </form>
+    {% else %}
+        <p>Your portfolio is empty.</p>
+    {% endif %}
+{% endblock %}
