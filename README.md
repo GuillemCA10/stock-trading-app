@@ -13,7 +13,7 @@ SETUP
 First you'll have to clone the repository:
 
 ```
-git clone https://github.com/your-username/stock-trading-app.git
+git clone https://github.com/GuillemCA10/stock-trading-app.git
 cd stock-trading-app
 ```
 
