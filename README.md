@@ -7,6 +7,10 @@ Note: Stock price data is fetched from CS50's finance API. The app is fully func
 but this dependency may break in the future if the API is taken down. 
 Migrating to a public alternative like Yahoo Finance or Alpha Vantage is a planned improvement.
 
+User data (username and password) will only be stored locally in app.db,
+which gets created automatically in your local project folder the first time you run the app. 
+It will never leave your machine, but if you are not convinced you can use a mock username and password.
+
 INSTALLATION
 
 ```
